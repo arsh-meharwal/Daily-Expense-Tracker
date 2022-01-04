@@ -44,8 +44,8 @@ function clicked() {
         localStorage.setItem('year', Number(inputValue));
     }
     let showElm = document.getElementById("set");
-    showElm.innerHTML = `<h1>Today's = ${localStorage.getItem('today')}<h1> <h1>This Month = ${localStorage.getItem('month')}<h1><h1>This Year = ${localStorage.getItem('year')}<h1>`
-
+    showElm.innerHTML = `<h1>Today Rs. ${localStorage.getItem('today')}<h1> <h1>This Month Rs. ${localStorage.getItem('month')}<h1><h1>This Year Rs. ${localStorage.getItem('year')}<h1>`
+    val.value = "";
 
 
 
@@ -57,4 +57,4 @@ function press(event) {
 }
 
 let showElm = document.getElementById("set");
-showElm.innerHTML = `<h1>Today's = ${localStorage.getItem('today')}<h1> <h1>This Month = ${localStorage.getItem('month')}<h1><h1>This Year = ${localStorage.getItem('year')}<h1>`
+showElm.innerHTML = `<h1>Today Rs. ${localStorage.getItem('today')}<h1> <h1>This Month Rs. ${localStorage.getItem('month')}<h1><h1>This Year Rs. ${localStorage.getItem('year')}<h1>`
