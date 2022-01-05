@@ -49,3 +49,28 @@ button{
     margin-right: 4%;
     font-family: 'Nunito', sans-serif;
 }
+#chartDiv{
+    width:80%; height:300px; margin:40px auto;
+}
+
+@media screen and (max-width : 800px) {
+    
+    #set{
+        position: relative;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        /* margin: 5rem; */
+        margin-left: 20px;
+        margin-right: -4px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 10px;
+    }
+    #set h1{
+        padding: 9px;
+    }
+    #chartDiv{
+        width:100%; height:300px; margin:20px 0px;
+    }
+}
+
