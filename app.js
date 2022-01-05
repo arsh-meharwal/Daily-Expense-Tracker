@@ -9,16 +9,17 @@ function clicked() {
     let clickDay = date.getDay();
     let clickYear = date.getFullYear();
     let clickMonth = date.getMonth();
+    let cTime = date.getHours();
 
     var val = document.getElementById("input");
     var inputValue = val.value;
     console.log(inputValue);
+    console.log(cTime);
 
     //Day Change
     if (clickDay === currentDay) {
         let prevVal = localStorage.getItem('today')
         let newVal = Number(prevVal) + Number(inputValue)
-        console.log('stored = ' + newVal);
         localStorage.setItem('today', Number(newVal));
     } else {
         localStorage.setItem('today', Number(inputValue));
@@ -27,8 +28,7 @@ function clicked() {
 
     if (clickMonth === currentMonth) {
         let prevVal = localStorage.getItem('month')
-        let newVal = Number(prevVal) + Number(inputValue)
-        console.log('stored month = ' + newVal);
+        let newVal = Number(prevVal) + Number(inputValue);
         localStorage.setItem('month', Number(newVal));
     } else {
         localStorage.setItem('month', Number(inputValue));
@@ -38,7 +38,6 @@ function clicked() {
     if (clickYear === currentYear) {
         let prevVal = localStorage.getItem('year')
         let newVal = Number(prevVal) + Number(inputValue)
-        console.log('stored = ' + newVal);
         localStorage.setItem('year', Number(newVal));
     } else {
         localStorage.setItem('year', Number(inputValue));
