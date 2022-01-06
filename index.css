@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Spline+Sans:wght@484&display=swap');
+
 
 body{
     background-color: antiquewhite;
@@ -7,9 +9,9 @@ body{
 .title{
     display: flex;
     justify-content: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .b_title{
     display: flex;
@@ -19,7 +21,6 @@ body{
     font-size: 1.8rem;
 }
 #input{
-    /* position: relative; */
     display: block;
     margin : auto;
     width: 150px;
@@ -44,33 +45,62 @@ button{
     display: flex;
     align-content: center;
     justify-content: space-between;
-    /* margin: 5rem; */
     margin-left: 9%;
     margin-right: 4%;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
+    font-size: 17px;
 }
 #chartDiv{
     width:100%; height:300px; margin:40px auto;
 }
 
+#boxes{
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    width: 180px;
+    height: 162px;
+    border: 2px solid black;
+
+}
+
+.mnthTitle{
+    text-align: center;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+#monthbox{
+    margin-top: 100px;
+}
+
 @media screen and (max-width : 800px) {
+    .title{
+        font-size: 2.4rem;
+    }
     
     #set{
         position: relative;
         display: flex;
         align-content: center;
         justify-content: space-between;
-        /* margin: 5rem; */
         margin-left: 20px;
         margin-right: -4px;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Spline Sans', sans-serif;
         font-size: 10px;
     }
     #set h1{
         padding: 9px;
     }
     #chartDiv{
-        width:100%; height:300px; margin:20px 0px;
+        width:100%; height:300px; 
+    }
+    .mnthTitle{
+        font-size:20px;
+    }
+    #boxes{
+        width: 103px;
+        height: 100px;
     }
 }
 
