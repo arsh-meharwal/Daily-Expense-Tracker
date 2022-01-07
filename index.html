@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Daily Expense Trackert</title>
+    <title>Document</title>
 
 </head>
 
@@ -14,17 +14,23 @@
     <div>
         <h1 class="title">Daily Expense Tracker</h1>
         <h1 class="b_title">Enter Today's Expenses</h1><br>
-        <input type='number' id="input" onkeyup="press(event)" ></input>
+        <input type='number' id="input" onkeyup="press(event)"></input>
         <div class="btn">
-            <button onclick="clicked()">GO</button>
+            <button onclick="clicked()">Enter</button>
         </div>
-        
+
         <div id="set">
             <!-- Elements here -->
         </div>
-        <div id="chartDiv" style="width:80%; height:300px; margin:40px auto;"></div>
+        <div id="chartDiv"></div>
+        <div id="monthbox">
+            <!-- elements here -->
+        </div>
     </div>
+
 </body>
+
 <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
 <script src="./app.js"></script>
+
 </html>
