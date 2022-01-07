@@ -174,7 +174,7 @@ function clicked() {
     }
     setValues();
     monthBox();
-
+    val.value = "";
 }
 function press(event) {
     if (event.key === 'Enter') {
