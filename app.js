@@ -1,6 +1,6 @@
 
 let date = new Date();
-let currentDay = date.getDay();
+let currentDay = date.getDate();
 let currentYear = date.getFullYear();
 let currentMonth = date.getMonth();
 
@@ -101,7 +101,7 @@ setValues();
 
 function clicked() {
     let date = new Date();
-    let clickDay = date.getDay();
+    let clickDay = date.getDate();
     let clickYear = date.getFullYear();
     let clickMonth = date.getMonth();
     let cTime = date.getHours();
