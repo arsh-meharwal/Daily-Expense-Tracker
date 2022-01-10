@@ -51,7 +51,7 @@ monthBox();
 
 function setValues(){
     let showElm = document.getElementById("set");
-    showElm.innerHTML = `<h1>Today - Rs. ${localStorage.getItem(currentDay)}</h1> <h1>This Month - Rs. ${localStorage.getItem('Month' + currentMonth)}</h1><h1>This Year - Rs. ${localStorage.getItem('year')}</h1>`
+    showElm.innerHTML = `<h1>Today = Rs. ${localStorage.getItem(currentDay)}</h1> <h1>This Month = Rs. ${localStorage.getItem('Month' + currentMonth)}</h1><h1>This Year = Rs. ${localStorage.getItem('year')}</h1>`
 
 
     JSC.Chart('chartDiv', {
